@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/登录.css"/>
+    <script src="../js/swiper-3.4.1.min.js"></script>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/jquery.validate.js"></script>
+    <title>登录页面</title>
+</head>
+<body>
+<div class="head">
+    <ul class="menu-item">
+        <li><a href="../html/首页.html" title="首页" id="menu-item_active">首页</a></li>
+        <li><a href="../html/分类.html" title="分类">分类</a></li>
+        <li><a href="../html/搭配.html" title="搭配">搭配</a></li>
+        <li><a href="../html/详情.html" title="详情">详情</a></li>
+        <li><a href="../html/搜索.html" title="搜索">搜索</a></li>
+        <li><a href="../html/登录.html" title="登录">登录</a></li>
+        <li><a href="../html/我的.html" title="我的">我的</a></li>
+        <li><a href="../html/购物袋.html" title="购物袋">购物袋</a></li>
+    </ul>
+    <span class="url1"></span>
+    <span class="url2"></span>
+    <div class="url">
+        <span class="pone" style=""></span>
+        <span class="ptwo" style=""></span>
+        <span class="pthree" style=""></span>
+    </div>
+</div>
+<div class="wrap">
+    <div class="leftd">
+        <dl>
+            <dt><img src="../image/denglu/denglu-pic01.png" alt=""/></dt>
+            <dd><span class="span1">有范</span><span class="span2">是一种生活态度</span></dd>
+        </dl>
+    </div>
+    <section class="rightd">
+        <h2>登录有范</h2>
+        <form name="infos" id="infos" action="javascript:;">
+            <input type="text" name="username" id="username" placeholder="用户名/手机号">
+            <span class="user1"></span>
+            <input type="password" name="pw" id="pw" placeholder="密码">
+            <span class="pw1"></span>
+            <input type="submit" value="登录" id="sbmt">
+            <div class="btn-bot">
+                <label for="remb">
+                    <input type="checkbox" name="remb" id="remb">
+                    记住登录状态
+                </label>
+                <a href="javascript:;" id="fgt">忘记密码?</a>
+                <span>|</span>
+                <a href="../html/注册.html" id="sig">立即注册</a>
+            </div>
+        </form>
+        <div class="oth-login">
+            <span>第三方登录方式:</span>
+            <a href="javascript:;"><span class="btn1"></span></a>
+            <a href="javascript:;"><span class="btn2"></span></a>
+            <a href="javascript:;"><span class="btn3"></span></a>
+        </div>
+    </section>
+</div>
+</body>
+<script>
+    $(function() {
+        var a = false;
+        $('.url1').click(function () {
+            if (a == false) {
+                $('.menu-item').stop(true, false).slideDown("slow");
+                a = true;
+            } else {
+                $('.menu-item').stop(true, false).slideUp("slow");
+                a=false;
+            }
+        })
+
+        //验证表单
+        $('#infos').validate({
+            debug:false,
+            onkeyup:false,
+            rules:{
+                username:{
+                    required:true,
+                    rangelength:[6,16]
+                },
+                pw:{
+                    required:true,
+                    rangelength:[6,16]
+                },
+            },
+            messages:{
+                username:{
+                    required:"用户名必填",
+                    rangelength:"用户名长度必须为6~10位且不能全为汉字"
+                },
+                pw:{
+                    required:"密码必填",
+                    digits:"必须为纯数字",
+                    rangelength:"密码长度为6~10位"
+                },
+            },
+            submitHandler:function(form){
+//                alert('验证通过');
+                $.ajax({
+                    url:"http://www.petrichoro.com/ports/index.php/Home/User/login",
+                    data:{
+                      user: $('#username').val(),
+                      pw: $('#pw').val()
+                    },
+                    dataType:"jsonp",
+                    type:"post",
+                    success:function(msg){
+                        $.each(mag,function(i,j){
+                            if(j=='登录成功'){
+                              location.href="../html/首页.html";
+                            }
+                        })
+                    }
+                })
+            }
+        })
+
+    })
+</script>
+</html>

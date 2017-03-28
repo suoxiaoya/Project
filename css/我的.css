@@ -1,0 +1,91 @@
+html, body {
+    position: relative;
+    height: 100%;
+
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.head .menu-item{
+    width: 100px;
+    height: 320px;
+    display: none; position: absolute; left:0; top: 31px;
+    background:#0000cc;
+    list-style: none;z-index: 8;
+    padding: 0;
+    text-align: center;
+}
+.head .menu-item li{
+    width: 100%; height: 40px;
+
+}
+.head .menu-item li:hover{ background: dodgerblue;}
+.head .menu-item a{ color: #fff;font-weight: bold; font-size: 14px;list-style: none;text-decoration: none;}
+
+.head{width: 900px; height: 50px;background: #3e3e3e;margin: 0px auto;line-height: 50px;position: relative}
+.head .url1{display: inline-block;width: 50px; height: 30px;  float: left;margin-top: 5px;background: url('../image/icon.png')no-repeat 20px 10px;}
+.head .url1:hover{position: absolute; left: 20px; top: 10px; background: url("../image/icon.png")no-repeat -49px 0px;}
+.head .url2{
+    position: absolute; left: 100px; top: 1px;
+    float: left;margin-left: 300px; margin-top: 10px;
+    background: url('../image/icon.png')no-repeat -101px -450px;
+}
+.head span{ width: 40px; height: 30px; font-size:30px; color:#fff; float: left;margin: 0px 20px;}
+.head .url{ float: right;margin-top: 15px;}
+.head .url .pone{ position: absolute; right: 150px; top: 15px; background: url('../image/icon.png')no-repeat -97px 0px}
+.head .url .pone:hover{ position: absolute; right: 150px; top: 15px; background: url('../image/icon.png')no-repeat -148px 0px}
+.head .url .ptwo{ position: absolute; right: 70px; top: 15px; background: url('../image/icon.png')no-repeat 0px -99px}
+.head .url .ptwo:hover{ position: absolute; right: 70px; top: 12px; background: url('../image/icon.png')no-repeat -49px -97px}
+.head .url .pthree{ position: absolute; right:0px; top: 15px; background: url('../image/icon.png')no-repeat -97px -99px}
+.head .url .pthree:hover{ position: absolute; right:0px; top: 12px; background: url('../image/icon.png')no-repeat -148px -97px}
+
+.wrap{ width: 900px; height: 600px;margin: 0 auto;}
+.a{
+    background: url("../image/sousuo/sousuo-bg.png")no-repeat center center;
+    width: 900px; height: 150px;
+}
+.b{ width: 156px; height:108px;position: relative;margin: 0 auto;}
+.b span img{
+    display: block;width: 100px;
+    height: 100px;border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top:-85px;
+}
+.b p{ position: absolute; left:35px; top:30px;}
+.b ul{ width: 240px; height: 50px; position: absolute; left:-90px; top:60px;}
+.b ul li{ float: left;margin-right: 15px;list-style: none;}
+
+.c{ width: 900px; height: 350px; border-top: 10px solid #ccc;}
+.ul9{ width: 900px; height: 40px;}
+.ul9 span{float: right; background: url("../image/icon.png")no-repeat -146px -449px;width: 20px;height: 40px;}
+.ul9 a{ text-decoration: none;color: #666666;}
+.li7{float: left;font-size: 20px;line-height: 40px;list-style: none;}
+.li8{
+    float: right;font-size: 20px;line-height: 40px;
+    list-style: none;position: absolute;right: 317px;
+}
+.ul8{ width: 900px; height: 70px;margin-top: 20px;}
+.ul8 li{ float: left;margin-right:112px;}
+.ul8 li span{float: left;padding-top: 40px;color: #666666; }
+.li1{background: url("../image/icon.png")no-repeat 0 -649px; width: 35px; height: 40px;list-style: none;}
+.li1:hover{ background:url("../image/icon.png")no-repeat -49px -649px; width: 35px; height: 40px; }
+.li2{background: url("../image/icon.png")no-repeat -98px -649px; width: 35px; height: 40px;list-style: none;}
+.li2:hover{background: url("../image/icon.png")no-repeat -150px -649px; width: 35px; height: 40px;}
+.li3{background: url("../image/icon.png")no-repeat 0 -697px; width: 35px; height: 40px;list-style: none;}
+.li3:hover{background: url("../image/icon.png")no-repeat -49px -697px; width: 35px; height: 40px;}
+.li4{background: url("../image/icon.png")no-repeat -98px -697px; width: 35px; height: 40px;list-style: none;}
+.li4:hover{background: url("../image/icon.png")no-repeat -150px -697px; width: 35px; height: 40px;}
+.li5{background: url("../image/icon.png")no-repeat 0 -749px; width: 35px; height: 40px;list-style: none;}
+.li5:hover{background: url("../image/icon.png")no-repeat -49px -749px; width: 35px; height: 40px}
+.li6{background: url("../image/icon.png")no-repeat -98px -749px; width: 35px; height: 40px;list-style: none;}
+.li6:hover{background: url("../image/icon.png")no-repeat -150px -749px; width: 35px; height: 40px;}
+.ul7{ width: 900px; height: 300px;}
+.ul7 li{ width: 900px; height: 40px;margin: 0 auto; list-style: none;color: #666666;}
+.ul7 span{ float: right; background: url("../image/icon.png")no-repeat -146px -449px;width: 20px;height: 40px;}

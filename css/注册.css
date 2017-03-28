@@ -1,0 +1,111 @@
+html, body {
+    position: relative;
+    height: 100%;
+
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.head{width: 900px; height: 50px;background: #3e3e3e;margin: 0px auto;line-height: 50px;position: relative}
+.head .url1{display: inline-block;width: 50px; height: 30px;  float: left;margin-top: 5px;background: url('../image/icon.png')no-repeat 20px 10px;}
+.head .url1:hover{position: absolute; left: 20px; top: 10px; background: url("../image/icon.png")no-repeat -49px 0px;}
+.head .url2{
+    position: absolute; left: 100px; top: 1px;
+    float: left;margin-left: 300px; margin-top: 10px;
+    background: url('../image/icon.png')no-repeat -101px -450px;
+}
+.head span{ width: 40px; height: 30px; font-size:30px; color:#fff; float: left;margin: 0px 20px;}
+.head .url{ float: right;margin-top: 15px;}
+.head .url .pone{ position: absolute; right: 150px; top: 15px; background: url('../image/icon.png')no-repeat -97px 0px}
+.head .url .pone:hover{ position: absolute; right: 150px; top: 15px; background: url('../image/icon.png')no-repeat -148px 0px}
+.head .url .ptwo{ position: absolute; right: 70px; top: 15px; background: url('../image/icon.png')no-repeat 0px -99px}
+.head .url .ptwo:hover{ position: absolute; right: 70px; top: 12px; background: url('../image/icon.png')no-repeat -49px -97px}
+.head .url .pthree{ position: absolute; right:0px; top: 15px; background: url('../image/icon.png')no-repeat -97px -99px}
+.head .url .pthree:hover{ position: absolute; right:0px; top: 12px; background: url('../image/icon.png')no-repeat -148px -97px}
+
+.wrap{
+    width: 900px;height: 800px;border: 1px solid #00ff00; margin: 0 auto;
+}
+.head .menu-item{
+    width: 100px;
+    height: 320px;
+    display: none; position: absolute; left:0; top: 31px;
+    background:#0000cc;
+    list-style: none;z-index: 8;
+    padding: 0;
+    text-align: center;
+
+}
+.head .menu-item li{
+    width: 100%; height: 40px;
+
+}
+.head .menu-item li:hover{ background: dodgerblue;}
+.head .menu-item a{ color: #fff;font-weight: bold; font-size: 14px;list-style: none;text-decoration: none;}
+
+.leftd{
+    float: left; width: 420px; height: 500px;
+    border: 1px solid #ccc; margin-left: 10px;
+    margin-top: 100px;
+}
+.leftd .span1{
+    width: 60px; height: 80px; float: left;
+    padding: 0 10px; font-size: 30px;
+    line-height: 80px;
+}
+.leftd .span2{
+    width: 210px; height: 80px; float: left;
+    padding: 0 10px; font-size: 30px;
+    line-height: 80px;
+}
+.rightd{
+    float: right; width: 420px;
+    height: 500px; border: 1px solid #ccc;
+    margin-right: 10px;
+    margin-top: 100px;
+    position: relative;
+}
+.rightd a{
+    width: 380px; height: 50px;display: block;
+    margin: 10px 10px;
+    background: #3e3e3e; color: #fff; font-size: 30px;text-decoration: none;line-height: 50px;text-align: center;
+}
+.sub{ width: 380px; height: 50px;font-size: 20px;}
+.rightd form input{
+    width: 380px; height: 50px;
+    margin: 10px 10px;
+    text-indent: 30px;
+}
+.btn-bot{
+    width: 380px; height: 40px;
+    border: 1px solid #ccc;
+    margin: 10px 10px;
+}
+.btn-bot #remb{width: 20px; height: 20px;}
+.btn-bot a{ list-style: none; margin-left: 10px; text-decoration: none;}
+.oth-login a{
+    display: block; width: 40px; height: 40px;
+    float: right; margin-right:20px ;
+    margin-top: 30px;
+}
+.oth-login span{
+    float: left;margin-left:20px;
+    margin-top: 30px;
+}
+.user1{
+    background: url("../image/icon.png")no-repeat 0 -349px;
+    display:block;width: 20px; height: 20px;position:absolute;left:20px; top: 84px;}
+.user2{
+    background: url("../image/icon.png")no-repeat 0 -349px;
+    display:block;width: 20px; height: 20px;position:absolute;left:20px; top: 160px;}
+.pw1{
+    background: url("../image/icon.png")no-repeat -48px -349px;
+    display:block;width: 30px; height: 30px;position:absolute;left:16px; top: 307px;}
+.pw2{
+    background: url("../image/icon.png")no-repeat -48px -349px;
+    display:block;width: 30px; height: 30px;position:absolute;left:16px; top: 236px;}

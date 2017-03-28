@@ -1,0 +1,108 @@
+html, body {
+    position: relative;
+    height: 100%;
+
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+li{list-style: none;}
+.head .menu-item{
+    width: 100px;
+    height: 320px;
+    display: none; position: absolute; left:0; top: 20px;
+    background:#0000cc;
+    list-style: none;z-index: 8;
+    padding: 0;
+    text-align: center;
+}
+.head .menu-item li{
+    width: 100%; height: 40px;
+
+}
+.head .menu-item li:hover{ background: dodgerblue;}
+.head .menu-item a{ color: #fff;font-weight: bold; font-size: 14px;list-style: none;text-decoration: none;}
+.wrap{ width: 900px; height: 350px; background: black; margin: 0px auto;}
+
+.head{width: 900px; height: 50px;background: #3e3e3e;margin: 0px auto;line-height: 50px;position: relative}
+.head .url1{display: inline-block;width: 50px; height: 30px;  float: left;margin-top: 5px;background: url('../image/icon.png')no-repeat 20px 10px;}
+.head .url1:hover{position: absolute; left: 20px; top: 10px; background: url("../image/icon.png")no-repeat -49px 0px;}
+.head .url2{
+    position: absolute; left: 100px; top: 1px;
+    float: left;margin-left: 300px; margin-top: 10px;
+    background: url('../image/icon.png')no-repeat -101px -450px;
+}
+.head span{ width: 40px; height: 30px; font-size:30px; color:#fff; float: left;margin: 0px 20px;}
+.head .url{ float: right;margin-top: 15px;}
+.head .url .pone{ position: absolute; right: 150px; top: 15px; background: url('../image/icon.png')no-repeat -97px 0px}
+.head .url .pone:hover{ position: absolute; right: 150px; top: 15px; background: url('../image/icon.png')no-repeat -148px 0px}
+.head .url .ptwo{ position: absolute; right: 70px; top: 15px; background: url('../image/icon.png')no-repeat 0px -99px}
+.head .url .ptwo:hover{ position: absolute; right: 70px; top: 12px; background: url('../image/icon.png')no-repeat -49px -97px}
+.head .url .pthree{ position: absolute; right:0px; top: 15px; background: url('../image/icon.png')no-repeat -97px -99px}
+.head .url .pthree:hover{ position: absolute; right:0px; top: 12px; background: url('../image/icon.png')no-repeat -148px -97px}
+
+body ul{width:860px; height: 40px; margin:30px auto; position: relative;}
+.li1{ float: left;position: absolute;}
+.li1 span{position: absolute;left: -30px;top: -10px; background: url("../image/icon.png")no-repeat -101px -349px; display: block; width: 30px; height: 30px;}
+.li2{  float: right;border-top: 2px solid #666666;  width: 280px; height: 2px;position: absolute; right: 20px;  }
+.li2-1{ background: url("../image/gouwuche/s_03.jpg")no-repeat; position: absolute; left: -1px;top:-7px;display: block; width: 20px; height: 20px;}
+.li2-1 i{ width: 100px; height: 10px;display: block; position: absolute; top: 20px;left: -35px;}
+.li2-2{ background: url("../image/gouwuche/s_05.jpg")no-repeat; position: absolute; left: 140px;top:-6px;display: block; width: 20px; height: 20px;}
+.li2-2 i{ width: 100px; height: 10px;display: block; position: absolute; top: 20px;left: -20px;}
+.li2-3{ background: url("../image/gouwuche/s_05.jpg")no-repeat; position: absolute; left: 280px;top:-6px;display: block; width: 20px; height: 20px;}
+.li2-3 i{ width: 100px; height: 10px;display: block; position: absolute; top: 20px;left: -35px;}
+.tab1{width: 900px; height:740px;margin: 0 auto;border: 2px solid #ccc;}
+.tab1 table{text-align: center;}
+.tab1 td{ width: 200px;height:30px; border: 1px solid #3e3e3e;position: relative;}
+.td1 input{ float: left;width: 15px; height: 15px;margin: 35px 3px;}
+.td1 img{ float: left;margin: 20px 5px;}
+.td1 div{ float: right;position: absolute; top: 0;left: 70px;}
+.footer{ width: 900px; height: 500px; margin: 0 auto;}
+.panduan{ width: 898px; height: 50px; border: 1px solid #666;margin-top: 30px;}
+.panduan li{ float: left;font-size: 18px;margin: -10px 10px;}
+.li3{ float: right;}
+.guang{width: 900px; height: 50px;margin-top: 20px;position:relative;}
+.btn1{ float: left;width: 90px; height: 40px; }
+.btn1 span{ background: url("../image/icon.png")no-repeat -99px -401px; display: block; width: 15px; height: 15px;position: absolute; top: 17px;}
+.btn2{ float: right;width: 90px; height: 40px;background: #c31341;color: #fff;font-weight: bold;}
+.btn2 span{ background: url("../image/icon.png")no-repeat -149px -401px; display: block; width: 15px; height: 15px;position: absolute; top: 17px;right: 0px;}
+.shopping{position:relative; width: 900px; height:50px; margin: 20px auto;float: left; border: 1px solid #6c6c6c;}
+.shopping p{ float: left;position: absolute;left: 30px;}
+.shopping p span{ background: url("../image/gouwuche/s_18.jpg")no-repeat; position: absolute;display: block; width: 20px; height: 20px;left:-20px;}
+.shopping .btn3{ float:right;position: absolute; top: 10px;right: 40px;}
+.shopping .btn4{ float:right;position: absolute; top: 10px;right: 10px;}
+.tupian{ width: 900px; height: 100px; margin: 0 auto;}
+.tupian{ width: 900px; height: 300px;}
+.tupian li{float: left;}
+
+.swiper-container {
+    width: 900px;
+    height: 180px;
+    margin: 20px auto;
+}
+.swiper-slide {
+    height: 130px;
+    text-align: center;
+    font-size: 18px;
+    /*background: #fff;*/
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}

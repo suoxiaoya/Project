@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/购物袋.css"/>
+    <script src="../js/swiper-3.4.1.min.js"></script>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <title></title>
+</head>
+<body>
+
+<div class="head">
+    <ul class="menu-item">
+        <li><a href="../html/首页.html" title="首页" id="menu-item_active">首页</a></li>
+        <li><a href="../html/分类.html" title="分类">分类</a></li>
+        <li><a href="../html/搭配.html" title="搭配">搭配</a></li>
+        <li><a href="../html/详情.html" title="详情">详情</a></li>
+        <li><a href="../html/搜索.html" title="搜索">搜索</a></li>
+        <li><a href="../html/登录.html" title="登录">登录</a></li>
+        <li><a href="../html/我的.html" title="我的">我的</a></li>
+        <li><a href="javascript:;" title="购物袋">购物袋</a></li>
+    </ul>
+    <span class="url1"></span>
+    <span class="url2"></span>
+    <div class="url">
+        <span class="pone" style=""></span>
+        <span class="ptwo" style=""></span>
+        <span class="pthree" style=""></span>
+    </div>
+</div>
+
+<ul>
+    <li class="li1"> <span></span>我的购物袋</li>
+    <li class="li2"><span class="li2-1"><i>查看购物袋</i></span><span class="li2-2"><i>填写订单</i></span><span class="li2-3"><i>完成购买</i></span></li>
+</ul>
+<div class="tab1">
+    <table>
+        <tr>
+            <td class="td1">商品信息</td>
+            <td>单价（元）</td>
+            <td>数量</td>
+            <td>返范票</td>
+            <td>小计（元）</td>
+            <td style="width: 250px;">操作</td>
+        </tr>
+        <tr>
+            <td class="td1" style="width: 500px;">
+                <input class="checked" type="checkbox"/>
+                <img src="../image/gouwuche/s_10.jpg" alt=""/>
+                <div>
+                    <p>Lift After袋鼠兜纯色七分袖衬衫</p>
+                    <p>颜色：黑色</p>
+                    <p>尺码：XXL</p>
+                </div>
+            </td>
+            <td>
+               <p class="p1">￥<span>299.00</span></p>
+            </td>
+            <td>
+                <button class="btn-1">-</button>
+                <span class="sp1">1</span>
+                <button class="btn-2">+</button>
+            </td>
+            <td>
+                <p>0</p>
+            </td>
+            <td>
+                <p>￥<span class="p2">299.00</span></p>
+            </td>
+            <td>
+                <button class="but1">删除</button>
+                <button>移入收藏</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="td1">
+                <input class="checked" type="checkbox"/>
+                <img src="../image/gouwuche/s_13.jpg" alt=""/>
+                <div>
+                    <p>Lift After袋鼠兜纯色七分袖衬衫</p>
+                    <p>颜色：黑色</p>
+                    <p>尺码：XXL</p>
+                </div>
+            </td>
+            <td>
+                <p class="p3">￥<span>299.00</span></p>
+            </td>
+            <td>
+                <button class="btn-3">-</button>
+                <span class="sp2">1</span>
+                <button class="btn-4">+</button>
+            </td>
+            <td>
+                <p>0</p>
+            </td>
+            <td>
+                <p>￥<span class="p4">299.00</span></p>
+            </td>
+            <td>
+                <button class="but2">删除</button>
+                <button>移入收藏</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="td1">
+                <input class="checked" type="checkbox"/>
+                <img src="../image/gouwuche/s_15.jpg" alt=""/>
+                <div>
+                    <p>Lift After袋鼠兜纯色七分袖衬衫</p>
+                    <p>颜色：黑色</p>
+                    <p>尺码：XXL</p>
+                </div>
+            </td>
+            <td>
+                <p class="p5">￥<span>299.00</span></p>
+            </td>
+            <td>
+                <button class="btn-5">-</button>
+                <span class="sp3">1</span>
+                <button class="btn-6">+</button>
+            </td>
+            <td>
+                <p>0</p>
+            </td>
+            <td>
+                <p>￥<span class="p6">299.00</span></p>
+            </td>
+            <td>
+                <button class="but3">删除</button>
+                <button>移入收藏</button>
+            </td>
+        </tr>
+    </table>
+    <div class="footer">
+        <div class="panduan">
+            <ul>
+                <li><input class="check" type="checkbox"/></li>
+                <li><input class="check2" type="checkbox"/></li>
+                <li>全选</li>
+                <li>批量删除</li>
+                <li >批量移入收藏夹</li>
+                <li style="float: right;position: absolute; right: 30px;">商品总价：<i style="color: #c31341; font-weight: bold;">￥999.00</i>元</li>
+            </ul>
+        </div>
+        <div class="guang">
+            <button class="btn1"><span></span>再逛逛</button>
+            <button class="btn2">去结算 <span></span></button>
+        </div>
+        <div class="shopping">
+            <p><span></span>凑单商品</p>
+            <button class="btn3"><</button>
+            <button class="btn4">></button>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img style="width: 100px" src="../image/gouwuche/s_22.jpg" alt=""/></div>
+                <div class="swiper-slide"><img style="width: 100px" src="../image/gouwuche/s_24.jpg" alt=""/></div>
+                <div class="swiper-slide"><img style="width: 100px" src="../image/gouwuche/s_32.jpg" alt=""/></div>
+                <div class="swiper-slide"><img style="width: 100px" src="../image/gouwuche/s_27.jpg" alt=""/></div>
+                <div class="swiper-slide"><img style="width: 100px" src="../image/gouwuche/s_34.jpg" alt=""/></div>
+                <div class="swiper-slide"><img style="width: 100px" src="../image/gouwuche/s_30.jpg" alt=""/></div>
+                <div class="swiper-slide"><img style="width: 100px" src="../image/gouwuche/s_24.jpg" alt=""/></div>
+                <div class="swiper-slide"><img style="width: 100px" src="../image/gouwuche/s_27.jpg" alt=""/></div>
+                <div class="swiper-slide"><img style="width: 100px" src="../image/gouwuche/s_32.jpg" alt=""/></div>
+                <div class="swiper-slide"><img style="width: 100px" src="../image/gouwuche/s_34.jpg" alt=""/></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 30,
+        freeMode: true,
+        loop:true,
+        autoplay:1000
+    });
+
+   $(function () {
+       $('.check').click(function(){
+           $('.td1 :checkbox').attr('checked',true);
+       })
+       $('.check2').click(function(){
+           $('.td1 :checkbox').attr('checked',false);
+       })
+
+       //下拉菜单
+       var a = false;
+       $('.url1').click(function () {
+           if (a == false) {
+               $('.menu-item').stop(true, false).slideDown("slow");
+               a = true;
+           } else {
+               $('.menu-item').stop(true, false).slideUp("slow");
+               a=false;
+           }
+       })
+
+      //计算第一个
+       var $v=0;
+       $('.btn-1').click(function(){
+          if($v<=1){
+              $v=1;
+              $('.sp1').html($v);
+          }
+           if($v>1){
+               $v--;
+               $('.sp1').html($v);
+               var $zhi1=$('.p1 span').html();
+               var $zhi2=$('.p2').html();
+               var $zhi3=$zhi2-$zhi1;
+                $('.p2').html($zhi3);
+           }
+       })
+
+       $('.btn-2').click(function(){
+           $v++;
+           $('.sp1').html($v);
+           var $zhi1=$('.p1 span').html();
+           var $zhi2=$zhi1*$v;
+           $('.p2').html($zhi2);
+       })
+
+//第二个
+    $('.btn-3').click(function(){
+        if($v<=1){
+            $v=1;
+            $('.sp2').html($v);
+        }
+        if($v>1){
+            $v--;
+            $('.sp2').html($v);
+            var $zhi1=$('.p3 span').html();
+            var $zhi2=$('.p4').html();
+            var $zhi3=$zhi2-$zhi1;
+            $('.p4').html($zhi3);
+        }
+    })
+    $('.btn-4').click(function(){
+        $v++;
+        $('.sp2').html($v);
+        var $zhi1=$('.p3 span').html();
+        var $zhi2=$zhi1*$v;
+        $('.p4').html($zhi2);
+    })
+//第三个
+       $('.btn-5').click(function(){
+           if($v<=1){
+               $v=1;
+               $('.sp3').html($v);
+           }
+           if($v>1){
+               $v--;
+               $('.sp3').html($v);
+               var $zhi1=$('.p5 span').html();
+               var $zhi2=$('.p6').html();
+               var $zhi3=$zhi2-$zhi1;
+               $('.p6').html($zhi3);
+           }
+       })
+       $('.btn-6').click(function(){
+           $v++;
+           $('.sp3').html($v);
+           var $zhi1=$('.p5 span').html();
+           var $zhi2=$zhi1*$v;
+           $('.p6').html($zhi2);
+       })
+
+
+       //删除
+       $('.but1').click(function(){
+           $('.but1').parent().parent().remove();
+       })
+       $('.but2').click(function(){
+           $('.but2').parent().parent().remove();
+       })
+       $('.but3').click(function(){
+           $('.but3').parent().parent().remove();
+       })
+   })
+</script>
+</html>

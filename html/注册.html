@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/注册.css"/>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/swiper-3.4.1.min.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/jquery.validate.js"></script>
+
+    <title>注册页面</title>
+</head>
+<body>
+<div class="head">
+    <ul class="menu-item">
+        <li><a href="../html/首页.html" title="首页" id="menu-item_active">首页</a></li>
+        <li><a href="../html/分类.html" title="分类">分类</a></li>
+        <li><a href="../html/搭配.html" title="搭配">搭配</a></li>
+        <li><a href="../html/详情.html" title="详情">详情</a></li>
+        <li><a href="../html/搜索.html" title="搜索">搜索</a></li>
+        <li><a href="../html/登录.html" title="登录">登录</a></li>
+        <li><a href="../html/我的.html" title="我的">我的</a></li>
+        <li><a href="../html/购物袋.html" title="购物袋">购物袋</a></li>
+    </ul>
+    <span class="url1"></span>
+    <span class="url2"></span>
+    <div class="url">
+        <span class="pone" style=""></span>
+        <span class="ptwo" style=""></span>
+        <span class="pthree" style=""></span>
+    </div>
+</div>
+<div class="wrap">
+    <div class="leftd">
+        <dl>
+            <dt><img src="../image/denglu/denglu-pic01.png" alt=""/></dt>
+            <dd><span class="span1">有范</span><span class="span2">是一种生活态度</span></dd>
+        </dl>
+    </div>
+    <section class="rightd">
+        <h2>注册有范</h2>
+        <form name="form" id="infos" action="javascript:;">
+            <input type="text" name="username" id="username" placeholder="用户名">
+            <span class="user1"></span>
+            <span class="user_er"></span>
+            <input type="text" name="tel" id="tel" placeholder="手机号"  maxlength="11">
+            <span class="user2"></span>
+            <span class="user_yi"></span>
+            <input type="password" name="pw" id="pw" placeholder="密码">
+            <span class="pw1"></span>
+            <span class="user_san"></span>
+            <input type="password" name="pw2" id="pw2"   placeholder="确认密码">
+            <span class="pw2"></span>
+            <span class="user_si"></span>
+            <input class="sub" type="submit" value="注册"/>
+        </form>
+    </section>
+</div>
+</body>
+<script>
+    $(function() {
+        var a = false;
+        $('.url1').click(function () {
+            if (a == false) {
+                $('.menu-item').stop(true, false).slideDown("slow");
+                a = true;
+            } else {
+                $('.menu-item').stop(true, false).slideUp("slow");
+                a=false;
+            }
+        })
+
+//       注册验证及ajax接口提交
+         $('#infos').validate({
+             debug:false,
+             onkeyup:false,
+             rules:{
+                 username:{
+                     required:true,
+                     rangelength:[6,16]
+                 },
+                 tel:{
+                     required:true,
+                     digits:true,
+                     rangelength:[11,11],
+                 },
+                 pw:{
+                     required:true,
+                     rangelength:[6,16]
+                 },
+                 pw2:{
+                     digits:true,
+                     equalTo:"#pw",
+                     required:true,
+                     rangelength:[6,16]
+                 }
+             },
+             messages:{
+                 username:{
+                     required:"用户名必填",
+                     rangelength:"用户名长度必须为6~10位且不能全为汉字"
+                 },
+                 tel:{
+                     required:"手机号必填",
+                     digits:"必须为纯数字",
+                     rangelength:"11位",
+                 },
+                 pw:{
+                     required:"密码必填",
+                     digits:"必须为纯数字",
+                     rangelength:"密码长度为6~10位"
+                 },
+                 pw2:{
+                     digits:"必须为纯数字",
+                     equalTo:"不一致",
+                     required:"必填",
+                     rangelength:"密码长度为6~10位"
+                 }
+             },
+             submitHandler:function(form){
+                 $.ajax({
+                     url:"http://www.petrichoro.com/ports/index.php/Home/User/regist",
+                     data:{
+                         user:$('#username').val(),
+                         phone:$('#tel').val(),
+                         psd:$('#pw').val(),
+                     },
+                     dataType:"jsonp",
+                     type:"post",
+                     async:"true",
+                     success:function(msg){
+                         console.log(msg);
+                         $.each(msg,function(x,y){
+                             console.log(y);
+                             if(y=='用户名已存在'){
+                                  $('.user_er').html('用户名已存在');
+                             }
+                             if(y=='请填写正确格式的手机号'){
+                                 $('.user_yi').html('请填写正确格式的手机号');
+                             }
+                         })
+                         if(j=='注册成功'){
+                             location.href="../html/首页.html";
+                         }
+                     }
+                 })
+
+             }
+         })
+
+    })
+</script>
+</html>

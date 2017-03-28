@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/我的.css"/>
+    <script src="../js/swiper-3.4.1.min.js"></script>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <title>我的</title>
+</head>
+<body>
+
+<div class="head">
+    <ul class="menu-item">
+        <li><a href="../html/首页.html" title="首页" id="menu-item_active">首页</a></li>
+        <li><a href="../html/分类.html" title="分类">分类</a></li>
+        <li><a href="../html/搭配.html" title="搭配">搭配</a></li>
+        <li><a href="../html/详情.html" title="详情">详情</a></li>
+        <li><a href="../html/搜索.html" title="搜索">搜索</a></li>
+        <li><a href="../html/登录.html" title="登录">登录</a></li>
+        <li><a href="javascript:;" title="我的">我的</a></li>
+        <li><a href="../html/购物袋.html" title="购物袋">购物袋</a></li>
+    </ul>
+    <span class="url1"></span>
+    <span class="url2"></span>
+    <div class="url">
+        <span class="pone" style=""></span>
+        <span class="ptwo" style=""></span>
+        <span class="pthree" style=""></span>
+    </div>
+</div>
+<div class="wrap">
+    <div class="a"></div>
+    <div class="b">
+        <span><img src="../image/wode/1.png" alt=""/></span>
+        <p>LADY</p>
+        <ul>
+            <li>单品收藏0</li>
+            <li>品牌收藏0</li>
+            <li>我的订单0</li>
+        </ul>
+    </div>
+    <div class="c">
+        <ul class="ul9">
+            <li class="li7"><a href="#">我的订单</a></li>
+            <li class="li8"><a href="#">查看全部订单</a><span></span></li>
+        </ul>
+        <ul class="ul8">
+            <li class="li1"><span>全部</span></li>
+            <li class="li2"><span>全部</span></li>
+            <li class="li3"><span>全部</span></li>
+            <li class="li4"><span>全部</span></li>
+            <li class="li5"><span>全部</span></li>
+            <li class="li6"><span>全部</span></li>
+        </ul>
+        <ul class="ul7">
+            <li>我的范票<span></span></li>
+            <li>我的会员<span></span></li>
+            <li>地域管理<span></span></li>
+            <li>有范问答抢范票<span></span></li>
+            <li>意见反馈<span></span></li>
+        </ul>
+    </div>
+</div>
+</body>
+<script>
+    $(function(){
+        $('.c ul li').mouseover(function(){
+            $(this).css('backgroundColor','#ccc');
+        })
+        $('.c ul li').mouseout(function(){
+            $(this).css('backgroundColor','');
+        })
+
+
+        //下拉菜单
+        var a = false;
+        $('.url1').click(function () {
+            if (a == false) {
+                $('.menu-item').stop(true, false).slideDown("slow");
+                a = true;
+            } else {
+                $('.menu-item').stop(true, false).slideUp("slow");
+                a=false;
+            }
+        })
+    })
+</script>
+</html>
